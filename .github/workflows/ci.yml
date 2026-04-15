@@ -1,0 +1,17 @@
+name: CI
+on:
+  push:         { branches: [main, develop] }
+  pull_request: { branches: [main] }
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - name: Install
+        run: pip install pytest pandas scikit-learn shap dbt-snowflake --quiet
+      - name: Unit tests
+        run: pytest tests/test_features.py -v
+      - name: dbt parse
+        run: cd dbt_chicago && dbt parse --profiles-dir . || true

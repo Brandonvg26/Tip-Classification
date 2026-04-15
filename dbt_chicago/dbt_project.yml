@@ -1,0 +1,11 @@
+name: 'dbt_chicago'
+version: '1.0.0'
+config-version: 2
+profile: 'dbt_chicago'
+model-paths: ['models']
+test-paths:  ['tests']
+models:
+  dbt_chicago:
+    staging:      { +materialized: view }
+    intermediate: { +materialized: view }
+    marts:        { +materialized: table, +schema: MARTS }

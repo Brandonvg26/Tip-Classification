@@ -1,0 +1,13 @@
+dbt_chicago:
+  target: dev
+  outputs:
+    dev:
+      type:      snowflake
+      account:   MPGBAXR-LG68403
+      user:      brandonvg2698
+      password:  Misterioh3$710
+      role:      ACCOUNTADMIN
+      database:  TAXI_DB
+      warehouse: TAXI_WH
+      schema:    STAGING
+      threads:   4

@@ -1,0 +1,39 @@
+artifact_path: file:///c:/Users/brand/portfolio/Tip-Classification/mlruns/291648156792664634/models/m-5032dc14c78c47bcb904f6594ea482e0/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.11.5
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.8.0
+    skops_trusted_types: null
+is_signature_from_type_hint: false
+mlflow_version: 3.10.1
+model_id: m-5032dc14c78c47bcb904f6594ea482e0
+model_size_bytes: 639914
+model_uuid: m-5032dc14c78c47bcb904f6594ea482e0
+prompts: null
+run_id: dc42c5e9bb4045ba865e7ea606441614
+signature:
+  inputs: '[{"type": "long", "name": "pickup_hour", "required": true}, {"type": "long",
+    "name": "pickup_dow", "required": true}, {"type": "long", "name": "pickup_month",
+    "required": true}, {"type": "long", "name": "is_weekend", "required": true}, {"type":
+    "long", "name": "is_late_night", "required": true}, {"type": "double", "name":
+    "trip_miles", "required": true}, {"type": "double", "name": "trip_minutes", "required":
+    true}, {"type": "double", "name": "fare_per_mile", "required": true}, {"type":
+    "double", "name": "fare_per_minute", "required": true}, {"type": "double", "name":
+    "extras", "required": true}, {"type": "double", "name": "fare", "required": true},
+    {"type": "long", "name": "pickup_is_airport", "required": true}, {"type": "long",
+    "name": "dropoff_is_airport", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1,
+    2]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-04-10 22:55:47.804075'

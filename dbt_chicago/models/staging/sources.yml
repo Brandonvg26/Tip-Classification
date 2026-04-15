@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: raw
+    database: TAXI_DB
+    schema: RAW
+    tables:
+      - name: chicago_trips
+        description: 'Raw Chicago taxi trips — 2023, credit card only'
+        columns:
+          - name: FARE
+            # removed not_null test — raw source can have nulls,
+            # staging model filters them with WHERE FARE > 0
+          - name: TRIP_START_TIMESTAMP
+            tests: [not_null]

@@ -1,0 +1,10 @@
+artifact_location: file:///c:/Users/brand/portfolio/Tip-Classification/mlruns/291648156792664634/models/m-5032dc14c78c47bcb904f6594ea482e0/artifacts
+creation_timestamp: 1775861747752
+experiment_id: '291648156792664634'
+last_updated_timestamp: 1775861757807
+model_id: m-5032dc14c78c47bcb904f6594ea482e0
+model_type: null
+name: tip_classifier
+source_run_id: dc42c5e9bb4045ba865e7ea606441614
+status: 2
+status_message: null

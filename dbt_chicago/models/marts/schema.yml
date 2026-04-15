@@ -1,0 +1,12 @@
+version: 2
+models:
+  - name: mart_trip_features
+    description: 'Training-ready feature table — Chicago taxi tip prediction'
+    columns:
+      - name: TRIP_ID
+        tests: [unique, not_null]
+      - name: tipped
+        tests:
+          - accepted_values: { values: [0, 1] }
+      - name: fare_per_mile
+        tests: [not_null]

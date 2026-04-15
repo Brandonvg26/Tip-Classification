@@ -1,0 +1,16 @@
+creation_timestamp: 1775861757840
+current_stage: None
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1775861757840
+model_id: m-5032dc14c78c47bcb904f6594ea482e0
+name: chicago_tip_classifier
+run_id: dc42c5e9bb4045ba865e7ea606441614
+run_link: null
+source: models:/m-5032dc14c78c47bcb904f6594ea482e0
+status: READY
+status_message: null
+storage_location: file:///c:/Users/brand/portfolio/Tip-Classification/mlruns/291648156792664634/models/m-5032dc14c78c47bcb904f6594ea482e0/artifacts
+user_id: null
+version: 2
+workspace: default

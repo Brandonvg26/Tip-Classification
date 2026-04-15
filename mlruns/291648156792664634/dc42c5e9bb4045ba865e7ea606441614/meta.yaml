@@ -1,0 +1,14 @@
+artifact_uri: file:///c:/Users/brand/portfolio/Tip-Classification/mlruns/291648156792664634/dc42c5e9bb4045ba865e7ea606441614/artifacts
+end_time: 1775861840372
+entry_point_name: ''
+experiment_id: '291648156792664634'
+lifecycle_stage: active
+run_id: dc42c5e9bb4045ba865e7ea606441614
+run_name: gbt_baseline
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1775861699643
+status: 3
+tags: []
+user_id: brand

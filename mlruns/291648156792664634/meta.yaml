@@ -1,0 +1,7 @@
+artifact_location: file:///c:/Users/brand/portfolio/Tip-Classification/mlruns/291648156792664634
+creation_time: 1775840369042
+experiment_id: '291648156792664634'
+last_update_time: 1775840369042
+lifecycle_stage: active
+name: chicago_tip_prediction
+workspace: default

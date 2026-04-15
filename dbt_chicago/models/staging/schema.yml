@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: stg_chicago_trips
+    description: 'Cleaned staging layer — nulls and invalid trips removed'
+    columns:
+      - name: TRIP_ID
+        tests: [not_null]
+      - name: fare
+        tests:
+          - not_null
+          - dbt_utils.accepted_range:
+              min_value: 0
+              inclusive: false
+      - name: trip_seconds
+        tests: [not_null]
+      - name: pickup_at
+        tests: [not_null]
